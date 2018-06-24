@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+   <!-- Cover -->
+    <div class="cover">
+        <div class="menu">
+            <h2>WELCOME TO</h2>
+            <h1>
+                <span style="color:#FC95C7;text-shadow: 0px 10px 35px #FC95C7;">P</span>
+                <span style="color:#0BFFFF;text-shadow: 0px 10px 35px #0BFFFF;">U</span>
+                <span style="color:#E20E0D;text-shadow: 0px 10px 35px #E20E0D;">C</span> MAN</h1>
+
+            <div class="btn">
+                <button class="btn1" style="margin-right:3%">PLAY NOW</button>
+                <button class="btn2">OPTION</button>
+            </div>
+        </div>
+
+        <div class="mainOption">
+            <div class="close">
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="header">
+                <span class="pacman">Change PUC</span>
+                <span class="buggy">Change BUGGY</span>
+            </div>
+            <div class="body">
+                <span>
+                    <img src="image/p1.png" alt="">
+                </span>
+                <span>
+                    <img src="image/p2.jpg" alt="">
+                </span>
+                <span>
+                    <img src="image/p4.png" alt="">
+                </span>
+                <span>
+                    <img src="image/p3.png" alt="">
+                </span>
+            </div>
+            <div class="body2">
+                <span>
+                    <img src="image/b1.png" alt="">
+                </span>
+                <span>
+                    <img src="image/b2.png" alt="">
+                </span>
+                <span>
+                    <img src="image/b3.png" alt="">
+                </span>
+                <span>
+                    <img src="image/b4.png" alt="">
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- cover-end -->
+
+
+  <!-- GAME-TIME -->
+    <div class="time">
+        <ul>
+            <li>Timer</li>
+            <li class="timer">60</li>
+        </ul>
+        <ul>
+            <li>Dead</li>
+            <li class="dead">0</li>
+        </ul>
+
+
+    </div>
+    <!-- GAME-TIME-END -->
+
+    <!-- OPTION -->
+    <div class="option">
+        <span class="menuIcon">
+            <i class="fa fa-home"></i>
+        </span>
+        <span class="songIcon">
+            <i class="fa fa-volume-up"></i>
+            <i class="fa fa-volume-off"></i>
+
+        </span>
+    </div>
+
+    <!-- OPTION-END -->
+
+
+
+<!-- GAME-ZONA -->
+    <div class="dis">
+        <div class="kvad">
+            <img src="image/pac.png" alt="">
+        </div>
+        <div class="kvad2"></div>
+    </div>
+
+    <!-- GAME-ZONA-END -->
+
+<!-- SCORE-TABLE -->
+    <div class="final">
+        <p>You die
+            <span>10</span> buggy :)</p>
+        <button class="Mainmenu">Main Menu</button>
+    </div>
+    <!-- SCORE-TABLEEND -->
+
+ <!-- AUDIO -->
+    <audio id="eat">
+        <source src="audio/eat.mp3" type="audio/mpeg">
+
+    </audio>
+    <audio id="pacman">
+        <source src="audio/pacman.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="lose">
+        <source src="audio/lose.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="gameEnd">
+        <source src="audio/gameEnd.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- AUDIO-END -->
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js">   </script>
+</body>
+
+</html>

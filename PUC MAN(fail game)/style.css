@@ -1,0 +1,384 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+body{
+    background-color: black;
+}
+
+/* PUC-MAN */
+.kvad{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 2%;
+    left:2%;
+    z-index: 11;
+}
+.kvad img{
+    width: 100%;
+    
+}
+/* PUC-MAN-END */
+
+/* BUGGY */
+.kvad2{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("image/pac2.png");
+    background-size: cover;
+
+}
+
+
+.pre{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("image/pac2.png");
+    background-size: cover;
+}
+/* BUGGY-END */
+
+/* GAME-ZONA */
+.dis{
+    border: 1px solid blue;
+    box-shadow: 0 0 5px 15px blue;
+
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%,70px);
+    animation: animet 3s linear 0s infinite reverse;
+}
+/* GAME-ZONA-END */
+
+
+/* COVER */
+.cover{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background:url("image/cover.png");
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     z-index: 10;
+     transition: all 0.6s linear;
+}
+.cover .menu{
+    position: absolute;
+    color: yellow;
+    left: 34%;
+    top: 20%;
+}
+.menu h2{
+    text-align: center;
+    font-size: 40px;
+    color: yellow;
+    animation: anime 3s linear 0s infinite reverse;
+}
+.menu h1{
+    font-size: 78px;
+    padding-top: 5%;
+    text-shadow: 0px 10px 35px yellow;
+}
+
+.menu .btn{
+    text-align: center;
+    margin-top:10%;
+  
+
+}
+.btn button{
+    background: transparent;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    color: yellow;
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+    outline: none;
+}
+.btn button:hover{
+    box-shadow: 0px 0px 5px 2px yellow
+}
+/* COVER-END */
+
+ /* GAME-TIME  */
+.time{
+    border: 1px solid blue;
+    color: wheat;
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 23%;
+    left: 70%;
+    animation: animet 3s linear 0s infinite reverse;
+    
+}
+
+.time ul{
+    display: inline-block;
+    text-align: center;
+    font-size: 30px;
+    width: 48%;
+    padding-top: 4%
+
+}
+.time ul li:nth-of-type(1){
+margin-bottom: 2%
+}
+.time .timer{
+    font-size: 60px;
+    color: green;
+}
+.time .dead{
+    font-size: 60px;
+    color: red;
+
+}
+/* GAME-TIME-END */
+
+
+/* SCORE-TABLE */
+.final{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    border: 1px solid blue;
+    background: black;
+    width: 60%;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 4%;
+    display: none;
+    
+}
+.final p{
+    color: yellow;
+    text-align: center;
+    font-size: 25px;
+    padding-bottom: 4%
+    
+}
+.final p span{
+    color:green
+}
+.final button{
+    background: transparent;
+    cursor: pointer;
+    color: yellow;
+    border:1px solid yellow;
+    transition: all 0.3s ease;
+    padding: 10px;
+    margin-right: 2%;
+
+
+}
+.final button:hover{
+    box-shadow: 0 0 5px 2px yellow;
+}
+
+/* SCORE-TABLE-END */
+
+
+/* GAME OPTION */
+.option{
+    position: absolute;
+    padding: 5px;
+
+}
+.option span{
+    cursor: pointer;
+
+}
+
+.option span i.fa{
+  color: yellow;
+  padding: 10px;
+  border: 1px solid yellow;
+}
+
+i.fa-volume-off{
+    display: none;
+}
+/* GAME OPTION -END */
+
+
+/* MAIN-OPTION */
+
+.mainOption{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    width: 50%;
+    height: 300px;
+    border: 1px solid yellow;
+    background: black;
+    display: none;
+}
+.mainOption .close{
+    position: absolute;
+    color: red;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.mainOption .header{
+    text-align: center;
+    padding: 10px;
+}
+.mainOption .header span{
+    border: 1px solid greenyellow;
+    color: greenyellow;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin-right: 5%;
+    cursor: pointer;
+}
+.mainOption .header .pacman{
+    background-color:rgba(173, 255, 47,0.1);
+}
+
+  
+
+.mainOption .body{
+    display: block
+}
+.mainOption .body span{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: 2%;
+    margin-top: 2%;
+
+}
+.mainOption .body span:hover{
+    border: 1px solid greenyellow;
+    cursor: pointer;
+}
+.mainOption .body span img{
+    width: 100%;
+}
+
+
+.mainOption .body2{
+    display: none;
+}
+
+.mainOption .body2 span{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    margin-right: 2%;
+    margin-top: 2%;
+
+}
+.mainOption .body2 span:hover{
+    border: 1px solid greenyellow;
+    cursor: pointer;
+}
+.mainOption .body2 span img{
+    width: 100%;
+}
+
+/* MAIN-OPTION-END */
+
+
+
+/* ANIMATION */
+
+@keyframes anime{
+    0%,25%{
+        text-shadow: 0px 10px 30px yellow;
+        
+    }
+    50%,75%{
+        text-shadow: 0px 15px 50px yellow;
+        
+    }
+    100%{
+        text-shadow: 0px 10px 30px yellow;
+        
+    }
+
+        
+    }
+
+    @keyframes animet{
+        0%,25%{
+            box-shadow:  0px 0px 15px  0px blue;
+            
+        }
+        50%{
+            box-shadow: 0px 0px 20px 0px blue;
+            
+        }
+        75%{
+            box-shadow: 0px 0px 30px 0px blue;
+            
+        }
+        100%{
+            box-shadow: 0px 0px 15px 0px blue;
+            
+        }
+    
+            
+        }
+
+        @keyframes anima{
+            0%,25%{
+                box-shadow:  0px 0px 15px  0px red;
+                
+            }
+            50%{
+                box-shadow: 0px 0px 20px 0px red;
+                
+            }
+            75%{
+                box-shadow: 0px 0px 30px 0px red;
+                
+            }
+            100%{
+                box-shadow: 0px 0px 15px 0px red;
+                
+            }
+        
+                
+            }
+
+
+            /* ANIMATION-END */
+
+
+
+
+   
+
+
+
+
+    
+   
+
+
+
+
+
+
